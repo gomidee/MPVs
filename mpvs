@@ -44,5 +44,5 @@ elif [ $input == 1 ]; then echo "URL"; read url; mpv $url
 elif [ $input == 4 ]; then echo "URL"; read url; mpv --no-video $url
   #Jazz
 elif [ $input == 5 ]; then jazz
-elif [ $input == 6 ];then bash /usr/local/bin/yt-rss.sh
+elif [ $input == 6 ];then bash /usr/local/bin/yt.sh
   fi
