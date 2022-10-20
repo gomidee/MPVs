@@ -1,0 +1,48 @@
+#!/bin/bash
+
+jazz(){
+
+clear
+
+echo -e "What would you like to listen to?
+1) Smooth Piano Jazz (3h 35min)
+2) Cozy Fall Coffe Shop (8h 03m)
+3) Lofi Jazz Study (3h 39min)
+4) Rainy Cafe Jazz (3h 34min)
+5) Jazzy Town - Lofi Jazz (30min)"
+
+read input1
+
+if [ $input1 == 1 ]; then mpv --no-video https://www.youtube.com/watch?v=MYPVQccHhAQ 
+elif [ $input1 == 2 ]; then mpv --no-video https://www.youtube.com/watch?v=VMAPTo7RVCo 
+elif [ $input1 == 3 ]; then mpv --no-video https://www.youtube.com/watch?v=CfPxlb8-ZQ0 
+elif [ $input1 == 4 ]; then mpv --no-video https://www.youtube.com/watch?v=NJuSStkIZBg 
+elif [ $input1 == 5 ]; then mpv --no-video https://www.youtube.com/watch?v=u4ENF5OCtkY 
+fi
+
+
+
+}
+echo -e "Which channel would you like to watch?
+
+  i) Install dependencies
+  1) Youtube Video
+  2) Yotube/Twitch Live
+  3) Cellbit (Twitch)
+  4) Youtube Video (audio-only)
+  5) Youtube Jazz (Study)
+  6) Vitor Liberato (YT)"
+
+read input 
+  # Cellbit Live
+  if [ $input == 3 ];then streamlink --player mpv https://www.twitch.tv/cellbit best
+  #YT/Twitch Live
+elif [ $input == 2 ]; then echo "Stream URL"; read urlis; streamlink --player mpv $urlis best
+  # YT Video
+elif [ $input == 1 ]; then echo "URL"; read url; mpv $url  
+  # Audio only YT video
+elif [ $input == 4 ]; then echo "URL"; read url; mpv --no-video $url
+  #Jazz
+elif [ $input == 5 ]; then jazz
+elif [ $input == 6 ];then bash /usr/local/bin/yt-rss.sh
+  fi
