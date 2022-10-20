@@ -27,4 +27,9 @@ cd /usr/local/bin; wget https://raw.githubusercontent.com/gomidee/MPVs/main/mpvs
 sudo apt install mpv
 cd /usr/local/bin; wget https://raw.githubusercontent.com/gomidee/MPVs/main/mpvs && wget https://raw.githubusercontent.com/gomidee/MPVs/main/yt.sh; chmod +x mpvs; cd
 ```
+### Usage
+
+```
+mpvs
+```
 
