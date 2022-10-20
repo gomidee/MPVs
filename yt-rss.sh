@@ -1,7 +1,5 @@
 #!/bin/sh
 
-# RSS_URL = https://www.youtube.com/feeds/videos.xml?channel_id=UC9BUxkHwS4hIpb04DXgpvKw
-
 # url = https://www.youtube.com/feeds/videos.xml?channel_id=UC9BUxkHwS4hIpb04DXgpvKw
 video=$(cat f.tmp)
 
