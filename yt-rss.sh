@@ -1,6 +1,5 @@
 #!/bin/sh
 
-# url = https://www.youtube.com/feeds/videos.xml?channel_id=UC9BUxkHwS4hIpb04DXgpvKw
 video=$(cat f.tmp)
 
 touch f.tmp
