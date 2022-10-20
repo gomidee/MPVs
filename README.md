@@ -6,3 +6,21 @@ No need to open your browser anymore! MPVs has got you covered!
 ## What is MPVs?
 
 It's a simple Shell script that automates daily tasks. Simply run it and make a choice. I'm still developing it but some funcionaliteis are more than ready for usage!
+
+### Installation
+
+Well, all you need is to have MPV installed. For MacOS, Arch Linux or Debian-based distros. Run:
+
+**MacOS**
+```
+brew install mpv
+```
+
+**Arch Linux**
+```
+pacman -S mpv
+```
+**Debian**
+```
+sudo apt install mpv
+```
