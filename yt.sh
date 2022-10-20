@@ -9,17 +9,6 @@ Primocast=https://www.youtube.com/feeds/videos.xml?channel_id=UCfMA8s_QXPPcuOTjT
 Huberman_Lab=https://www.youtube.com/feeds/videos.xml?channel_id=UC2D2CMWXMOVWx7giW1n3LIg
 Jon_Olsson=https://www.youtube.com/feeds/videos.xml?channel_id=UCyQb1TTrfRzQZmEfsx770qw
 
-video=$(cat f.tmp)
-
-setup() {
-  #Make sure files don't exist to avoid errors
-
-touch f.tmp
-sleep 1
-rm *.tmp
-sleep 1
-touch f.tmp
-}
 
 fetch_videos() {
 #Get RSS, make file with the video Title tmp
@@ -35,18 +24,18 @@ echo "Which video would you like to watch?"
 sleep 1
 cat -s -n title.tmp
 read input
-if [ $input == '1' ]; then cat link.tmp | sed -n '1,1p' > f.tmp; mpv $video
-elif [ $input == '2' ];then cat link.tmp | sed -n '2,2p' > f.tmp; mpv $video
-elif [ $input == '3' ];then cat link.tmp | sed -n '3,3p' > f.tmp; mpv $video
-elif [ $input == '4' ];then cat link.tmp | sed -n '4,4p' > f.tmp; mpv $video
-elif [ $input == '5' ];then cat link.tmp | sed -n '5,5p' > f.tmp; mpv $video
+if [ $input == '1' ]; then cat link.tmp | sed -n '1,1p' > f.tmp; video=$(cat f.tmp); echo "Loading: $video"; mpv $video
+elif [ $input == '2' ];then cat link.tmp | sed -n '2,2p' > f.tmp; video=$(cat f.tmp); echo "Loading: $video"; mpv $video
+elif [ $input == '3' ];then cat link.tmp | sed -n '3,3p' > f.tmp; video=$(cat f.tmp); echo "Loading: $video"; mpv $video
+elif [ $input == '4' ];then cat link.tmp | sed -n '4,4p' > f.tmp; video=$(cat f.tmp); echo "Loading: $video"; mpv $video
+elif [ $input == '5' ];then cat link.tmp | sed -n '5,5p' > f.tmp; video=$(cat f.tmp); echo "Loading: $video"; mpv $video
 
 fi
 }
 
-#Get the videos from the RSS of the selected Channel, create files to help with video selection
+  #Make sure files don't exist to avoid errors
 
-setup
+
 
 echo -e "Which Channel would you like to watch?
 1) Vitor Liberato
