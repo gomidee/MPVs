@@ -14,17 +14,17 @@ Well, all you need is to have MPV installed. For MacOS, Arch Linux or Debian-bas
 **MacOS**
 ```
 brew install mpv
-cd /usr/local/bin; wget https://raw.githubusercontent.com/gomidee/MPVs/main/mpvs; chmod +x mpvs; cd
+cd /usr/local/bin; wget https://raw.githubusercontent.com/gomidee/MPVs/main/mpvs && wget https://raw.githubusercontent.com/gomidee/MPVs/main/yt.sh; chmod +x mpvs; cd
 ```
 
 **Arch Linux**
 ```
 pacman -S mpv
-cd /usr/local/bin; wget https://raw.githubusercontent.com/gomidee/MPVs/main/mpvs; chmod +x mpvs; cd
+cd /usr/local/bin; wget https://raw.githubusercontent.com/gomidee/MPVs/main/mpvs && wget https://raw.githubusercontent.com/gomidee/MPVs/main/yt.sh; chmod +x mpvs; cd
 ```
 **Debian**
 ```
 sudo apt install mpv
-cd /usr/local/bin; wget https://raw.githubusercontent.com/gomidee/MPVs/main/mpvs; chmod +x mpvs; cd
+cd /usr/local/bin; wget https://raw.githubusercontent.com/gomidee/MPVs/main/mpvs && wget https://raw.githubusercontent.com/gomidee/MPVs/main/yt.sh; chmod +x mpvs; cd
 ```
 
