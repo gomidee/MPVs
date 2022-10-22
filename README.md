@@ -14,7 +14,7 @@ Well, all you need is to have MPV installed. For MacOS, Arch Linux or Debian-bas
 **MacOS**
 ```
 brew install mpv
-cd /usr/local/bin; wget https://raw.githubusercontent.com/gomidee/MPVs/main/mpvs && wget https://raw.githubusercontent.com/gomidee/MPVs/main/yt.sh; chmod +x mpvs; cd
+cd /usr/local/bin; wget https://raw.githubusercontent.com/gomidee/MPVs/main/mpvs && wget https://raw.githubusercontent.com/gomidee/MPVs/main/yt.sh; chmod +x mpvs && chmod +x yt.sh; cd
 ```
 
 **Arch Linux**
